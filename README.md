@@ -62,39 +62,32 @@
 
 ## 📊 Bonus Highlights
 
-* Data visualizations (histograms, bar charts) for exploratory data analysis and feature distribution insights.
-* Feature importance plot to interpret which factors most impact carbon footprint predictions.
-* Modular, reusable code snippets for encoding, scaling, and evaluation to facilitate future model enhancements.
+* 📌 Predicted vs Actual Plot: A scatter plot (like the one shown above) that compares true target values against model predictions. The red dashed line indicates ideal predictions — closer clustering around this line suggests better model performance.
+
+* 📉 Residual Plot: Displays the errors (residuals) between predicted and actual values to help identify non-random patterns, model bias, or variance issues.
+
+* 🧩 Modular Code Snippets: Clean, reusable code blocks for data preprocessing, model training, evaluation, and visualization to support easy experimentation and future updates.
 
 ---
 
 ## ⚙️ Dependencies
 
-Install required libraries using pip:
+* To run this project, ensure the following Python libraries are installed:
+  * NumPy – for numerical computations
+  * Pandas – for data manipulation and analysis
+  * Matplotlib – for plotting visualizations (e.g., Predicted vs Actual, Residual Plot)
+  * Scikit-learn – for model building and evaluation (e.g., Decision Tree Regressor)
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-Or use the provided `requirements.txt` file for environment reproducibility.
-
+Or use the provided `requirements.txt` and run: 
+```bash
+pip install -r requirements.txt
 ---
-
-## 📧 Submission Details
-
-* **To:** [dhilipj@jayadhi.com](mailto:dhilipj@jayadhi.com)
-* **Subject:** Entry Level – AI/ML – Option no (X) – Basit Bashir Wani
-
----
-
 ## 👨‍💻 About the Author
 
 **Basit Bashir Wani**
 B.Tech Electronics and Communication Engineering (ECE)
 National Institute of Technology, Srinagar
-
-[LinkedIn Profile](https://www.linkedin.com/in/basitbashirwani) *(optional)*
-
----
-
-If you want, I can help you draft a short email to accompany this submission or assist with the requirements.txt file. Just let me know!
