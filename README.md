@@ -7,7 +7,7 @@
 ## 📂 Dataset Used
 
 * **Name:** Carbon Footprint.csv
-* **Source:** Provided as part of the assessment package
+* **Source:** Random dataset from web
 * **Features:**
 
   * Mode of Transport (Categorical)
@@ -23,27 +23,39 @@
 ## 🧠 Approach Summary
 
 ### 1. Data Cleaning & Preprocessing
+* Checked for missing values and handled them appropriately.
 
-* Checked for missing values and handled them appropriately (imputation or removal).
-* Encoded categorical features (e.g., Transport Mode) using OneHotEncoding.
-* Scaled numerical features using `StandardScaler` for normalization.
+* Developed a reusable preprocessing pipeline that:
+  * Handled missing values using a median imputation strategy with SimpleImputer(strategy="median")
 
+  * Encodes categorical variables (like Transport Mode) with OneHotEncoder
+
+  * Scales numerical features using StandardScaler(for linear regressor)
+
+* This pipeline ensures streamlined and consistent data handling for training and inference.
 ### 2. Model Building
 
-* Implemented a **Random Forest Regressor** to predict carbon footprint.
-* Performed hyperparameter tuning via `GridSearchCV` to optimize:
+* Implemented a **Decision Tree Regressor** to predict carbon footprint.
+* Performed hyperparameter tuning using RandomizedSearchCV with the following parameter distributions:
+  * criterion: ['squared_error', 'friedman_mse']
+  * splitter: ['best', 'random']
+  * max_depth: integers from 3 to 20
+  * max_features: ['sqrt', 'log2', None]
 
-  * Number of estimators (`n_estimators`)
-  * Maximum tree depth (`max_depth`)
-  * Minimum samples to split (`min_samples_split`)
+* This comprehensive tuning helped optimize model performance and prevent overfitting.
+
 
 ### 3. Evaluation
 
 * Used metrics:
-
-  * R² Score: 0.84
-  * Mean Absolute Error (MAE): 132.4
-  * Root Mean Squared Error (RMSE): 201.7
+   * Before Hyper Parameter Tunning: 
+     * R² Score: 0.6720282827473432
+     * Mean Squared Error (MSE): 472588.8262195122
+     * Root Mean Squared Error (RMSE): 687
+   * After Hyper Parameter Tunning: 
+     * R² Score: 0.7404797613009263
+     * Mean Squared Error (MSE): 373954.0897440275
+     * Root Mean Squared Error (RMSE): 611
 * These results indicate a strong predictive ability with acceptable error margins.
 
 ---
