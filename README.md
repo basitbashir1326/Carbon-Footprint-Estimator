@@ -1,6 +1,6 @@
 # 🌱 Carbon Footprint Predictor
 
-A machine learning model to predict individual weekly carbon footprint based on behavioral and lifestyle features such as transport, meat consumption, and energy usage.
+A machine learning model to predict individual weekly carbon footprint based on behavioral and lifestyle features such as transport, meat consumption, energy usage, etc.
 
 ### AI/ML Entry-Level Assessment Project by Basit Bashir Wani
 
