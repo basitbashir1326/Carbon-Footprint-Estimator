@@ -104,10 +104,11 @@ A machine learning model to predict individual weekly carbon footprint based on 
   * NumPy – for numerical computations
   * Pandas – for data manipulation and analysis
   * Matplotlib – for plotting visualizations (e.g., Predicted vs Actual, Residual Plot)
-  * Scikit-learn – for model building and evaluation (e.g., Decision Tree Regressor)
+  * Scikit-learn – for model building and evaluation (e.g., Decision Tree Regressor
+  * Joblib - for saving and loading the trained machine learning model and pipeline
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
+pip install pandas numpy matplotlib seaborn scikit-learn joblib
 ```
 
 Or use the provided `requirements.txt` and run: 
