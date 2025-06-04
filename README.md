@@ -75,7 +75,9 @@ A machine learning model to predict individual weekly carbon footprint based on 
 
 * 📌 Predicted vs Actual Plot: A scatter plot (like the one shown above) that compares true target values against model predictions. The red dashed line indicates ideal predictions — closer clustering around this line suggests better model performance.
 
-* 📉 Residual Plot: Displays the errors (residuals) between predicted and actual values to help identify non-random patterns, model bias, or variance issues.
+* 📉 Residual Plot: The residual plot reveals a fairly random scatter around zero, suggesting that the model captures the main patterns well. However, the spread at higher predicted values hints at potential variance issues or room for improvement in those ranges.
+  
+* 📊🔍 Feature Importance Plot: Our model reveals that how far you drive and how often you fly are the biggest contributors to your environmental footprint. Surprisingly, lifestyle choices like diet and electricity usage played a much smaller role in the predictions — highlighting the outsized impact of transportation habits.
 
 * 🧩 Modular Code Snippets: Clean, reusable code blocks for data preprocessing, model training, evaluation, and visualization to support easy experimentation and future updates.
 
