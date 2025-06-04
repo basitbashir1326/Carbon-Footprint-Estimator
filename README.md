@@ -31,6 +31,13 @@ A machine learning model to predict individual weekly carbon footprint based on 
  * 📊 Evaluated using R² and RMSE metrics, both before and after tuning.
  * 📉 Analyzed residuals and model outputs for bias and variance.
  ---
+ ## 🔄 Workflow Overview
+
+The following flowchart summarizes the key steps in the project:
+
+![Workflow](flowchart.png)
+
+ ---
  ### 💡 Why Decision Tree Regressor Over Linear Model?
 
    * A **Decision Tree Regressor** was chosen because:
