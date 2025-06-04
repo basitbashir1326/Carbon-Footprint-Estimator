@@ -86,6 +86,7 @@ Or use the provided `requirements.txt` and run:
 ```bash
 pip install -r requirements.txt
 ---
+```
 ## 👨‍💻 About the Author
 
 **Basit Bashir Wani**
