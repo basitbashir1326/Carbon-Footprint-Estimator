@@ -1,4 +1,4 @@
-# 🌱 Carbon Footprint Predictor
+# 🌱 Carbon Footprint Estimator
 
 A machine learning model to predict individual weekly carbon footprint based on behavioral and lifestyle features such as Diet, Transport, Electricity Usage, Vehicle Type, etc.
 
