@@ -90,5 +90,5 @@ pip install -r requirements.txt
 ## 👨‍💻 About the Author
 
 **Basit Bashir Wani**
-B.Tech Electronics and Communication Engineering (ECE)
-National Institute of Technology, Srinagar
+*B.Tech Electronics and Communication Engineering (ECE)
+*National Institute of Technology, Srinagar
