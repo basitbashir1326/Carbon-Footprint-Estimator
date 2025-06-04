@@ -72,26 +72,38 @@ The following flowchart summarizes the key steps in the project:
 
 
 ### 3. Evaluation
-
-* Used metrics:
-   * Before Hyperparameter Tunning: 
-     * R² Score: 0.6720282827473432
-     * Mean Squared Error (MSE): 472588.8262195122
-     * Root Mean Squared Error (RMSE): 687
-   * After Hyperparameter Tunning: 
-     * R² Score: 0.7404797613009263
-     * Mean Squared Error (MSE): 373954.0897440275
-     * Root Mean Squared Error (RMSE): 611
+* **Pre-Scaling/Pipeline**:
+    * Cross-validated R² Scores: [0.75356313 0.73702283 0.68046992 0.68663828 0.74053667]
+    * Mean R² Score: 0.7196461645644016
+* **Post-Scaling/Pipeline**:
+    * Before Hyperparameter Tunning: 
+       * R² Score: 0.6720282827473432
+       * Mean Squared Error (MSE): 472588.8262195122
+       * Root Mean Squared Error (RMSE): 687
+     * After Hyperparameter Tunning: 
+       * R² Score: 0.7404797613009263
+       * Mean Squared Error (MSE): 373954.0897440275
+       * Root Mean Squared Error (RMSE): 611
 * These results indicate a strong predictive ability with acceptable error margins.
-
+### 4. App Development
+  * After building and evaluating the model, I developed an interactive web application using Streamlit:
+      * Created app.py to allow users to input lifestyle details (e.g., diet, transport, electricity use).
+      * Used joblib to load the trained model (carbon_model.pkl) and preprocessing pipeline (carbon_pipeline.pkl).
+      * The app collects user input via form fields and makes predictions in real time.
+      * Displays the estimated weekly CO₂ footprint on submission.
+      * Ready for deployment on platforms like Streamlit Cloud or Render.
 ---
 ## 📈 Results Summary
-
-- Final R² Score: **0.74(The model predicts CO₂ fairly well — it's right about 74% of the time)**
-- RMSE: **611 kg CO₂(On average, the model's predictions are off by 611 kilograms of CO₂.)**
-- Model effectively captures nonlinear relationships using a Decision Tree.
-- Residual analysis confirms minimal bias or variance issues.
-
+ * Before Scaling / Preprocessing (Raw Data):
+   * Cross-validated R² Scores: [0.75, 0.74, 0.68, 0.69, 0.74]
+   * Average R² Score: 0.72
+   * The model performed well even on raw data, predicting about 72% of the variation in carbon footprint correctly.
+   * This means the model could already make good predictions using the original, unprocessed data.
+ * Post-Processing & Tuning:
+   * Final R² Score: **0.74(The model predicts CO₂ fairly well — it's right about 74% of the time)**
+   * RMSE: **611 kg CO₂(On average, the model's predictions are off by 611 kilograms of CO₂.)**
+   * Model effectively captures nonlinear relationships using a Decision Tree.
+   * Residual analysis confirms minimal bias or variance issues.
 
 ## 📊 Bonus Highlights
 
