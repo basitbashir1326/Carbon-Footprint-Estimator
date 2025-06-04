@@ -85,7 +85,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 Or use the provided `requirements.txt` and run: 
 ```bash
 pip install -r requirements.txt
----
 ```
 ## 👨‍💻 About the Author
 
