@@ -16,7 +16,7 @@
   * Electricity Usage
   * Household Size
   * ...and more
-* **Target:** Annual Carbon Footprint (in kg CO₂ equivalent)
+* **Target:** Weekly Carbon Footprint (in kg CO₂ equivalent)
 
 ---
 
