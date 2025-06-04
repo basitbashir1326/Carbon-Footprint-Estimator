@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ecb26bd2-41fd-4cb9-bc11-da51b6f9b7ad)# 🌱 Carbon Footprint Predictor
+# 🌱 Carbon Footprint Predictor
 
 A machine learning model to predict individual weekly carbon footprint based on behavioral and lifestyle features such as Diet, Transport, Electricity Usage, Vehicle Type, etc.
 
