@@ -23,8 +23,17 @@ A machine learning model to predict individual weekly carbon footprint based on 
 * **Target:** Weekly Carbon Footprint (in kg CO₂ equivalent)
 
 ---
+Approach(Summary)
+ * ✅ Cleaned and preprocessed the dataset, handling missing values and encoding categorical variables.
+ * ⚙️ Built a reusable pipeline for scaling, encoding, and imputation.
+ * 🌲 Trained a Decision Tree Regressor for prediction.
+ * 🛠️ Tuned model using RandomizedSearchCV to optimize performance.
+ * 📊 Evaluated using R² and RMSE metrics, both before and after tuning.
+ * 📉 Analyzed residuals and model outputs for bias and variance.
 
-## 🧠 Approach Summary
+
+---
+## 🧠 Detailed Approach
 
 ### 1. Data Cleaning & Preprocessing
 * Checked for missing values and handled them appropriately.
