@@ -1,5 +1,7 @@
 # 🌱 Carbon Footprint Predictor
 
+A machine learning model to predict individual weekly carbon footprint based on behavioral and lifestyle features such as transport, meat consumption, and energy usage.
+
 ### AI/ML Entry-Level Assessment Project by Basit Bashir Wani
 
 ---
@@ -48,17 +50,24 @@
 ### 3. Evaluation
 
 * Used metrics:
-   * Before Hyper Parameter Tunning: 
+   * Before Hyperparameter Tunning: 
      * R² Score: 0.6720282827473432
      * Mean Squared Error (MSE): 472588.8262195122
      * Root Mean Squared Error (RMSE): 687
-   * After Hyper Parameter Tunning: 
+   * After Hyperparameter Tunning: 
      * R² Score: 0.7404797613009263
      * Mean Squared Error (MSE): 373954.0897440275
      * Root Mean Squared Error (RMSE): 611
 * These results indicate a strong predictive ability with acceptable error margins.
 
 ---
+## 📈 Results Summary
+
+- Final R² Score: **0.74(The model predicts CO₂ fairly well — it's right about 74% of the time)**
+- RMSE: **611 kg CO₂(On average, the model's predictions are off by 611 kilograms of CO₂.)**
+- Model effectively captures nonlinear relationships using a Decision Tree.
+- Residual analysis confirms minimal bias or variance issues.
+
 
 ## 📊 Bonus Highlights
 
