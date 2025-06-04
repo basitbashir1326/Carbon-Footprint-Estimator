@@ -23,15 +23,16 @@ A machine learning model to predict individual weekly carbon footprint based on 
 * **Target:** Weekly Carbon Footprint (in kg CO₂ equivalent)
 
 ---
-Approach(Summary)
+## Approach(Summary)
  * ✅ Cleaned and preprocessed the dataset, handling missing values and encoding categorical variables.
  * ⚙️ Built a reusable pipeline for scaling, encoding, and imputation.
  * 🌲 Trained a Decision Tree Regressor for prediction.
  * 🛠️ Tuned model using RandomizedSearchCV to optimize performance.
  * 📊 Evaluated using R² and RMSE metrics, both before and after tuning.
  * 📉 Analyzed residuals and model outputs for bias and variance.
-
-
+---
+💡 Why Decision Tree Over Linear Model?
+A Decision Tree Regressor was selected over a linear model because it can naturally capture complex, nonlinear relationships between features—something a linear model cannot do without heavy feature engineering. It also handles categorical variables more effectively and requires fewer assumptions about data distribution.
 ---
 ## 🧠 Detailed Approach
 
